@@ -2,7 +2,7 @@
 { config, pkgs, lib, ... }:
 
 let
-  isX86_64 = lib.match "x86_64-.*" config.system != null;
+  isX86_64 = pkgs.stdenv.hostPlatform.system == "x86_64-linux";
   rootDevice = config.fileSystems."/".device;
 in
 {

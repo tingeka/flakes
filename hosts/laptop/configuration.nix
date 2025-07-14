@@ -1,11 +1,11 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 
 {
   # host‑specific settings:
   networking.hostName = "laptop";
   system.stateVersion   = "25.05";
 
-  # Allow unfree software
+  # allow unfree software
   nixpkgs.config.allowUnfree = true;
 
   # per‑host user packages:

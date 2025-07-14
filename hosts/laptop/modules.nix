@@ -16,7 +16,7 @@
     ../../modules/users/m.nix
 
     # Home Manager
-    # inputs.home-manager.nixosModules.home-manager
-    # ../../modules/home-manager.nix
+    inputs.home-manager.nixosModules.home-manager
+    ../../modules/home-manager.nix
   ];
 }
