@@ -2,7 +2,7 @@
 {
   imports = [
 
-    ../../modules/core/boot.nix
+    ../../modules/core/boot-grub.nix
     ../../modules/core/networking.nix
 
     ../../modules/common/packages.nix
@@ -17,6 +17,6 @@
 
     # Home Manager
     inputs.home-manager.nixosModules.home-manager
-    ../../modules/home-manager.nix
+    ../../modules/home-manager/default.nix
   ];
 }

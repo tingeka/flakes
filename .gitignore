@@ -1,0 +1,4 @@
+# NixOS Flake ignores
+
+# Kate specific
+*.kate-swp
